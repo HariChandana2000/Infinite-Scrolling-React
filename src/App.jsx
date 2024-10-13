@@ -1,5 +1,17 @@
+import { Outlet } from "react-router";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 function App() {
-  return <h1>GeekGallery</h1>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export default App;

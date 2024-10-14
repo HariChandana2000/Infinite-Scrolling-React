@@ -58,7 +58,7 @@ const PhotoDescription = () => {
                 }}
               >
                 <h3>
-                  Uploaded By: {photoData.user.name} ({photoData.user.id})
+                  Uploaded By: {photoData.user.name} (@{photoData.user.id})
                 </h3>
                 <h4>Upload Date: {photoData.created_at}</h4>
               </ListGroup.Item>

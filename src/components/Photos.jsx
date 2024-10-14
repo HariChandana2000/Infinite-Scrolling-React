@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
-const count = 1;
-const apikey = "rxjuo8O2DbH1AOlqf9tb2CPsM4blD_0nzMXZp2XSdGw";
+const count = 10;
+const apikey = "V6np3zEsNV5gAO0IaKO3nLeXQtSslHCIoSxLMnr3Olk";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apikey}&count=${count}`;
 
 const Photos = () => {
@@ -19,8 +19,8 @@ const Photos = () => {
 
   useEffect(() => {
     getPhotos();
+    window.addEventListener("scrollend", getPhotos);
   }, []);
-
 
   console.log(photosData);
 
